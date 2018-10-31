@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.SplashScreen">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:scaleType="fitXY"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/back2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" />
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/icon_splash"
+android:visibility="invisible"
+        android:src="@drawable/smart_shopping_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="162dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:text="Smart Shopping"
+        android:id="@+id/name_app"
+android:visibility="invisible"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:password="false"
+        android:phoneNumber="false"
+        android:singleLine="false"
+        android:layout_below="@+id/icon_splash"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:id="@+id/fb"
+        android:visibility="invisible"
+        android:scaleType="centerInside"
+        android:src="@drawable/faceb"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_below="@+id/name_app"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="We will post without your permission. \n By logging in you accept the Terms &amp; Conditions."
+        android:id="@+id/textView"
+        android:visibility="invisible"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:layout_below="@+id/fb"
+        android:layout_centerHorizontal="true" />
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/progress_wheel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        wheel:matProg_barColor="#ffffff"
+        wheel:matProg_progressIndeterminate="true"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/fb"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

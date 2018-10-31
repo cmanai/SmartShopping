@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+
+    tools:context="tn.dwc.smartshopping.Activities.QRActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/my_color"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please Scan Qr codes located on the nearest shelve"
+        android:id="@+id/textView11"
+        android:textColor="#80000000"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_height="450dp"
+        android:id="@+id/fragment_qr"
+        android:layout_marginTop="160dp">
+        <fragment
+            android:name="tn.dwc.smartshopping.Fragments.QRScannerFragment"
+            android:id="@+id/scanner_fragment"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+</FrameLayout>

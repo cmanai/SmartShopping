@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        applicationId "tn.dwc.smartshopping"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile('com.github.florent37:materialviewpager:1.1.2@aar') {
+        transitive = true
+    }
+    compile files('libs/Parse-1.3.2.jar')
+
+    compile files('libs/bolts-android-1.2.1.jar')
+    compile('com.mikepenz:materialdrawer:4.4.1@aar') {
+        transitive = true
+    }
+    compile 'com.afollestad.material-dialogs:core:0.9.1.0'
+    dependencies {
+        implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    }
+    implementation 'com.quinny898.library.persistentsearch:library:1.1.0-SNAPSHOT'
+
+    implementation 'com.melnykov:floatingactionbutton:1.3.0'
+    implementation 'com.estimote:sdk:0.9.1@aar'
+    implementation 'com.github.kanytu:android-parallax-recyclerview:v1.4'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.easing:library:1.0.1@aar'
+    implementation 'com.daimajia.androidanimations:library:1.1.3@aar'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.sromku:simple-fb:4.1.1'
+    implementation 'com.parse:parse-android:1.+'
+    implementation 'com.pnikosis:materialish-progress:1.7'
+    implementation 'com.github.dexafree:materiallist:3.1.2'
+    implementation 'com.github.navasmdc:MaterialDesign:1.5@aar'
+    implementation 'com.github.clans:fab:1.6.1'
+    implementation 'com.github.manuelpeinado.fadingactionbar:fadingactionbar-abc:3.1.2'
+    implementation 'com.github.mrengineer13:snackbar:1.2.0'
+    implementation 'me.dm7.barcodescanner:zxing:1.8.3'
+    implementation 'me.dm7.barcodescanner:zbar:1.8.3'
+    implementation 'com.github.ksoichiro:android-observablescrollview:1.5.0'
+}

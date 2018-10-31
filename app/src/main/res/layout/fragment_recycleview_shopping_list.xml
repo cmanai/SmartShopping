@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/my_color"
+        android:id="@+id/relative_recycle"
+        android:layout_marginTop="50dp"
+        android:layout_height="120dp">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:text="Shopping List Name :"
+        android:layout_alignParentTop="true"
+        android:textSize="16sp"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="17dp"
+        android:textColor="@color/md_white_1000"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" my shopping list"
+            android:layout_alignParentTop="true"
+            android:textSize="14sp"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="180dp"
+            android:textColor="@color/md_white_1000"
+            android:id="@+id/my_shopping_list_name" />
+
+
+        <CheckBox
+            android:id="@+id/enable_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentTop="true"
+            android:text="With Budget"
+            android:buttonTint="@color/md_white_1000"
+
+            android:textColor="@color/md_white_1000"
+            android:textSize="16sp"
+            android:checked="true" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/edit"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/edit_budget_image" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Budget"
+
+            android:textSize="16sp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/my_color_2"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:id="@+id/edit_budget_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spent / Budget"
+            android:layout_alignParentTop="true"
+            android:textSize="16sp"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="200dp"
+            android:textColor="@color/md_white_1000"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:id="@+id/Spent_Budget_text" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100.000 DT / 10000.000DT"
+            android:layout_alignParentTop="true"
+            android:textSize="14sp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="170dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/md_white_1000"
+            android:id="@+id/Spent_Budget_value" />
+        </RelativeLayout>
+
+<android.support.v7.widget.RecyclerView
+
+    android:id="@+id/recyclerView"
+    android:layout_marginTop="170dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:layout_marginBottom="50dp"
+
+    />
+
+<Button
+    android:id="@+id/validate_shopping_list"
+    android:layout_width="match_parent"
+    android:background="@color/my_color"
+    android:textColor="@color/my_color_2"
+    android:text="Validate"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+
+>
+
+</Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No shopping list to display"
+        android:id="@+id/no_shopping_display"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#80000000"
+        android:visibility="invisible"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageViewpic"
+android:visibility="invisible"
+        android:src="@drawable/shop_list"
+        android:layout_above="@+id/no_shopping_display"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="9dp" />
+
+</RelativeLayout>

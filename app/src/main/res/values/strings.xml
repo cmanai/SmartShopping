@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Smart Shopping</string>
+    <string name="title_activity_splash_screen">Smart Shopping</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_id">163607610654213</string>
+    <string name="title_activity_overview">Overview</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_web_act">Web_act</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_details">DetailsActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_qr">QRActivity</string>
+</resources>
